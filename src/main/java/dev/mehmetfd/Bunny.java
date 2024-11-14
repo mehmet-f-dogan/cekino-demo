@@ -22,6 +22,13 @@ public class Bunny {
         this.health = r.nextInt(100);
     }
 
+    public Bunny(int generation, int reproductionRate, int mutationRate, int health){
+        this.generation = generation;
+        this.reproductionRate = reproductionRate;
+        this.mutationRate = mutationRate;
+        this.health = health;
+    }
+
     public int getAge(){
         return age;
     }
@@ -44,13 +51,6 @@ public class Bunny {
 
     public boolean canMate(){
         return age >= REPRODUCTION_AGE;
-    }
-
-    public Bunny(int generation, int reproductionRate, int mutationRate, int health){
-        this.generation = generation;
-        this.reproductionRate = reproductionRate;
-        this.mutationRate = mutationRate;
-        this.health = health;
     }
 
     public void ageOneYear(){

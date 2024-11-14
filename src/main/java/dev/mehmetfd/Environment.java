@@ -19,7 +19,6 @@ public class Environment {
     private int maxResourceAmountRefreshRate;
     private int minResourceAmountRefreshRate;
     private int resourceConsumeRate;
-    private int resourceScarcityDamage;
 
     private double randomEnvrionmentEventFrequency;
     private int maxRandomEnvrionmentEventDamage;
@@ -32,7 +31,6 @@ public class Environment {
         minResourceAmountRefreshRate = r.nextInt(1000);
         maxResourceAmountRefreshRate = minResourceAmountRefreshRate + r.nextInt(1000);
         resourceConsumeRate = r.nextInt(100);
-        resourceScarcityDamage = r.nextInt(10);
         randomEnvrionmentEventFrequency = Math.random();
         maxRandomEnvrionmentEventDamage = r.nextInt(20);
     }
